@@ -1,0 +1,49 @@
+﻿<%@ Master Language="VB" CodeFile="maestra.master.vb" Inherits="recursos_maestra_maestra" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Soc. Coop. Ficticia</title>
+    <link rel="icon" href="../imagenes/logo.png" sizes="16x16" type="image/png" />
+    <link rel="stylesheet" href="../estilos/main.css" media="screen" />
+    <script src="../../script/script.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav>
+            
+            <asp:ContentPlaceHolder id="bloqueNav" runat="server"></asp:ContentPlaceHolder>
+
+        </nav>
+        <header>
+            <div>
+                <asp:Image ID="imgTitulo" runat="server" ImageUrl="~/recursos/imagenes/logo.png" AlternateText="logo empresa" />
+                <nav>
+                    <ul>
+                        <asp:LinkButton ID="btnQuienes" runat="server" CssClass="btnNav">Quiénes somos</asp:LinkButton>
+                        <asp:LinkButton ID="btnServicios" runat="server" CssClass="btnNav">Servicios</asp:LinkButton>
+                        <asp:LinkButton ID="btnProductos" runat="server" CssClass="btnNav">Nuestros productos</asp:LinkButton>
+                        <asp:LinkButton ID="btnVenta" runat="server" CssClass="btnNav">Venta online</asp:LinkButton>
+                        <asp:LinkButton ID="btnContacto" runat="server" CssClass="btnNav">Contacto</asp:LinkButton>
+                    </ul>
+                </nav>
+            </div>
+            <h2>Sociedad Cooperativa Ficticia</h2>
+        </header>
+
+            <asp:ContentPlaceHolder id="bloquePrincipal" runat="server"></asp:ContentPlaceHolder>
+            
+        <footer>
+            <nav>
+              <div>IES ORETANIA</div>
+            </nav>
+            <div>
+                <p>Autor: Diego Hurtado Rosales</p>
+            </div>
+        </footer>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿<%@ Master Language="VB" CodeFile="admin_socios.master.vb" Inherits="recursos_maestra_maestra" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Administración de socios</title>
+    <link rel="icon" href="../imagenes/logo.png" sizes="16x16" type="image/png" />
+    <link rel="stylesheet" href="../estilos/main.css" media="screen" />
+    <script src="../../script/script.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav>
+            <asp:Label ID="lblUsuario" runat="server" CssClass="lblNavUsuario" ></asp:Label>
+        </nav>
+        <header>
+            <div>
+                <asp:Image ID="imgTitulo" runat="server" ImageUrl="~/recursos/imagenes/logo.png" AlternateText="logo empresa" />
+                <asp:ContentPlaceHolder ID="navAdministrador" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <h2>Sociedad Cooperativa Ficticia</h2>
+        </header>
+        <div id="contenedorPrincipal">
+            <aside>
+                <asp:LinkButton ID="btnInicio" runat="server" CssClass="btnAside" CausesValidation="false" >Ir a la página principal</asp:LinkButton><br />
+                <asp:LinkButton ID="btnSalir" runat="server" CssClass="btnAside" OnClick="btnSalir_Click" CausesValidation="false" >Salir de la cuenta</asp:LinkButton><br />
+                <asp:LinkButton ID="btnBuscaSocio" runat="server" CssClass="btnAside" PostBackUrl="~/recursos/paginas/administrador/busca_socio.aspx" CausesValidation="false" >Buscar socio</asp:LinkButton><br />
+                <asp:LinkButton ID="btnListadoSocios" runat="server" CssClass="btnAside" PostBackUrl="~/recursos/paginas/administrador/listado_socios.aspx" CausesValidation="false" >Listado de socios</asp:LinkButton><br />
+                <asp:LinkButton ID="btnAltaSocio" runat="server" CssClass="btnAside" PostBackUrl="~/recursos/paginas/administrador/alta_socio.aspx" CausesValidation="false" >Dar de alta socio</asp:LinkButton><br />
+                <asp:LinkButton ID="LinkBajaSocio" runat="server" CssClass="btnAside" PostBackUrl="~/recursos/paginas/administrador/baja_socio.aspx" CausesValidation="false" >Dar de baja socio</asp:LinkButton><br />
+            </aside>
+            <section>
+
+                <asp:ContentPlaceHolder ID="bloqueAdminSocios" runat="server"></asp:ContentPlaceHolder>
+
+            </section>
+        </div>
+        <footer>
+            <nav>
+                <div>IES ORETANIA</div>
+            </nav>
+            <div>
+                <p>Autor: Diego Hurtado Rosales</p>
+            </div>
+        </footer>
+
+    </form>
+</body>
+</html>

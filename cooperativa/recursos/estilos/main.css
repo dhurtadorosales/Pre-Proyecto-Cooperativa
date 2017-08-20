@@ -1,0 +1,191 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+nav {
+  border-top: 5px solid cadetblue;
+  border-bottom: 2px solid #747474;
+}
+
+header div img {
+  width: 15%;
+  float: left;
+  margin-left: 2%;
+  margin-top: 20px;
+  min-width: 200px;
+}
+
+header div nav {
+  border: 0;
+  float: left;
+  width: 75%;
+}
+
+header div nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header div nav ul .btnNav {
+  text-decoration: none;
+  color: black;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.2em;
+}
+
+header div nav ul .btnNav:hover {
+  color: cadetblue;
+  border-top: 3px solid cadetblue;
+  border-bottom: 3px solid cadetblue;
+  cursor: pointer;
+}
+
+header h2 {
+  clear: both;
+  color: cadetblue;
+  float: left;
+  margin-left: 2%;
+  margin-bottom: 20px;
+}
+
+aside img {
+  width: 100%;
+}
+
+section {
+  margin: auto;
+  min-height: 700px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+section table td {
+    vertical-align: top;
+}
+
+footer nav {
+  border: 0;
+}
+
+footer nav div {
+  background-color: #363839;
+  color: #8C8989;
+}
+
+footer div {
+  background-color: #282A2B;
+  color: #7A797C;
+}
+
+.filaSeleccionada {
+    background-color: #8995A1;
+    color: white;
+}
+
+.contenedorGridView {
+    width: 90%;
+    overflow-x: scroll;
+}
+
+.btnSection {
+   color: black;
+   text-decoration: none;
+   margin-left: 2%;
+}
+
+.btnSection:hover {
+    color: cadetblue;
+}
+
+.sectionLogin {
+    clear: both;
+    width: 50%;
+    margin: auto;
+    min-height: 700px;
+    background-color: whitesmoke;
+    color: black;
+    border: solid 1px grey;
+    text-align: center;
+}
+
+.sectionLogin div {
+    margin-top: 10px;
+}
+
+.busqueda {
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+.validator
+{
+   color:red;
+   font-size:13px;
+}
+
+.lblNavUsuario {
+    margin-left: 5%;
+    font-size: 1.2em;
+}
+
+.btnNavUsuario {
+    margin-left: 5%;
+    font-size: 1.2em;
+}
+
+.imgDefault {
+    width: 100%;
+}
+
+#contenedorPrincipal {
+    clear: both;
+    display: flex;
+}
+
+#contenedorPrincipal aside {
+    width: 20%;
+    background-color: black;
+    color: white;
+    font-size: 1.1em;
+    padding-top: 20px;
+}
+
+#contenedorPrincipal aside ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#contenedorPrincipal aside .btnAside {
+    color: white;
+    text-decoration: none;
+    margin-left: 10%;
+}
+
+#contenedorPrincipal aside .btnAside:hover {
+    color: cadetblue;
+    text-decoration: none;
+}
+
+#contenedorPrincipal section {
+    width: 80%;
+    border-top: solid 2px black;
+}
+
+.btnNavUsuario {
+    margin-left: 5%;
+    text-decoration: none;
+    color: black;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+}
+
+#btnLogin:hover {
+  color: cadetblue;
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+﻿<%@ Master Language="VB" CodeFile="socio.master.vb" Inherits="recursos_maestra_maestra" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Socios</title>
+    <link rel="icon" href="../imagenes/logo.png" sizes="16x16" type="image/png" />
+    <link rel="stylesheet" href="../estilos/main.css" media="screen" />
+    <script src="../../script/script.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav>
+            <asp:Label ID="lblUsuario" runat="server" CssClass="lblNavUsuario"></asp:Label>
+        </nav>
+        <header>
+            <div>
+                <asp:Image ID="imgTitulo" runat="server" ImageUrl="~/recursos/imagenes/logo.png" AlternateText="logo empresa" />
+                <asp:ContentPlaceHolder ID="navSocios" runat="server"></asp:ContentPlaceHolder>
+            </div>
+            <h2>Sociedad Cooperativa Ficticia</h2>
+        </header>
+        <div id="contenedorPrincipal">
+            <aside>
+                <asp:HyperLink ID="btnInicio" runat="server" CssClass="btnAside" NavigateUrl="~/recursos/paginas/socio/default_socio.aspx" >Ir a la página principal</asp:HyperLink><br />
+                <asp:LinkButton ID="btnSalir" runat="server" CssClass="btnAside" CausesValidation="false" OnClick="btnSalir_Click" >Salir de la cuenta</asp:LinkButton><br />
+                <asp:LinkButton ID="btnCambiaPass" runat="server" CssClass="btnAside" PostBackUrl="~/recursos/paginas/socio/cambia_pass.aspx">Cambia contraseña</asp:LinkButton><br />
+            </aside>
+            <section>
+
+                <asp:ContentPlaceHolder ID="bloqueSocios" runat="server"></asp:ContentPlaceHolder>
+
+            </section>
+        </div>
+        <footer>
+            <nav>
+                <div>IES ORETANIA</div>
+            </nav>
+            <div>
+                <p>Autor: Diego Hurtado Rosales</p>
+            </div>
+        </footer>
+
+    </form>
+</body>
+</html>
